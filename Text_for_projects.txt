@@ -1,0 +1,3 @@
+Web site to scrape:
+"https://www.airlinequality.com/airline-reviews/british-airways"
+And its further pages where pages = 10 and page_size -100
