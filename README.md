@@ -1,27 +1,92 @@
-# Customer_Analystics-and-intillegence
-Customer Analysis and Intelligence Project
-Welcome to my Customer Analysis and Intelligence project! In this project, I gathered and analyzed customer data to gain valuable insights and provide intelligence about customer behavior. Let me guide you through the key steps and highlights of this project:
+<!-- Project Title and Subtitle with Symbols -->
+<h1>🎯 Customer Segmentation</h1>
+<h2>📊 Sentiment-Analysis-and-Predictive-Modelling</h2>
 
-Project Overview
-I began by collecting data from various sources to obtain a comprehensive dataset of customer information. This dataset served as the foundation for the analysis.
+<!-- Brief with Image -->
+<p>For any business to run in the most efficient and successful way, the primary aspect of that business should be customer retention. In other words, it's the ability of the company to turn customers into repeated buyers of their product or service.</p>
+<!-- Customer Segmentation Section with Image -->
+<h3>🎯 Customer Segmentation</h3>
+<img src="https://www.corporatevision-news.com/wp-content/uploads/2022/10/Customer-Segmentation.jpg" alt="Customer Segmentation" width="500"/>
+<p>Within the vast array of reviews a company receives, we meticulously classify them into three distinct categories: positive, neutral, and negative. This segmentation enables us to effectively target positive, negative, and neutral customer segments with specific marketing strategies, maximizing the benefits for the company.</p>
 
-Data Analysis
-With the data in hand, the next step was to conduct a thorough data analysis. This involved data cleaning and preprocessing, allowing me to uncover significant patterns and trends within the customer data.
+<!-- Image -->
+<img src="https://f.hubspotusercontent00.net/hubfs/285855/Compressed-bigstock-Customer-Retention-Strategy-D-255195535.jpg" alt="Customer Retention Strategy" width="500"/>
 
-Sentiment Analysis
-One of the intriguing aspects of this project was employing sentiment analysis to understand customer sentiment. By leveraging natural language processing techniques, I categorized customer reviews and feedback, determining whether they were positive, negative, or neutral.
+<!-- Data Collection Section -->
+<h3>📈 Data Collection</h3>
 
-Machine Learning Model
-To go beyond sentiment analysis and predict customer behavior, I utilized a machine learning model. The choice of a Random Forest Classifier was made due to its robust performance and versatility. The model was trained to predict various aspects of customer behavior and preferences.
+<!-- Paragraph -->
+<p>Nothing can be built from a void. Ever wondered why every supermarket, multiplex, airlines, any form of proper business asks for feedback? Is it just for improvising? Absolutely no, so what else is the question. Let's dive deep and see what else...</p>
 
-Feature Selection
-Careful consideration of the features or attributes that influenced customer behavior was essential. I selected the most relevant factors for the model to ensure the best predictive accuracy.
+<!-- Image -->
+<img src="https://avinetworks.com/wp-content/uploads/2023/06/web-scraping-diagram.png" alt="Web Scraping Diagram" width="800"/>
 
-Evaluation
-A key part of the project was evaluating the model's performance. Common evaluation metrics, such as accuracy, precision, recall, F1-score, and ROC AUC, were used to assess its capabilities.
+<!-- Code Box -->
+<pre>
+<code>
+import requests
+from bs4 import BeautifulSoup
+import pandas as pd
+</code>
+</pre>
 
-Insights and Business Impact
-The most rewarding aspect of this project was the valuable insights derived from the data. These insights are poised to make a significant impact on business decisions, including understanding the key drivers of customer behavior and preferences.
+<!-- Out of Code Box -->
+<p>All the code for data collection is available <a href="https://github.com/Vamsi-Krishna-24/Customer-Segmentation-Sentiment-Analysis-and-Predictive-Modelling./blob/main/Data-Analysis-model-Building/Data_collectiion_through_web_scrapping.ipynb">here</a>.</p>
 
-Conclusion
-This project showcases the application of data science and machine learning techniques in real-world scenarios, empowering companies to understand their customers better and make informed, data-driven decisions.
+<!-- Sideheading and Paragraph -->
+<h3>🤔 Understanding Different Possibilities: How the Data Can Be Used</h3>
+<p>Every time feedback is given, it's molded to segment users so that each individual part is dealt with accordingly by the sales and marketing team.</p>
+
+<!-- In-Depth Paragraph -->
+<p>In-depth, understanding whether a customer will choose to engage with a company again hinges on the feedback they provide. Although the feedback process is inherently straightforward, its significance lies in our ability to predict a customer's likelihood of returning.</p>
+
+<h2>🔍 The solution 📕</h2>
+
+<!-- Sentiment Analysis Section -->
+<h3>🔍 The Role of Data Analysis - Sentiment Analysis</h3>
+<div style="display: flex; justify-content: space-between; align-items: center;">
+  <img src="https://drive.google.com/uc?export=view&id=1zpCBlr3aGy1oMEtDvMbiX5hUnCMmcQAd" alt="Sentiment Analysis Image 1" width="400"/>
+  <img src="https://drive.google.com/uc?export=view&id=1nRfyR8b-WwSsF12le46nURH1oAmIZAH4" alt="Sentiment Analysis Image 2" width="400"/>
+</div>
+
+<!-- Paragraph -->
+<p>Manual classification of millions of customer reviews in real-time is an arduous task. This is where the TextBlob Python library becomes indispensable. Serving as a tool for processing textual data, TextBlob offers a simplified API for common natural language processing tasks, such as identifying parts of speech and noun phrases.</p>
+
+<!-- In-Depth Paragraph -->
+<p>Sentiment analysis, a critical aspect of this process, involves TextBlob capturing phrases and words and classifying them into positive, neutral, or negative categories. In essence, sentiment analysis serves as our means to discern the emotions and sentiments expressed by individual customers in their reviews, providing valuable insights for strategic decision-making.</p>
+
+<!-- Python Requirements Section -->
+<h3>🐍 Python Requirements</h3>
+
+<!-- Code Box for requirements.txt -->
+<pre>
+<code> 
+pandas
+numpy
+textblob
+scikit-learn
+</code>
+</pre>
+
+<!-- Out of Code Box -->
+<p>To view the requirements.txt file  <a href="https://github.com/Vamsi-Krishna-24/Customer-Segmentation-Sentiment-Analysis-and-Predictive-Modelling./blob/main/requirements.txt">here</a>.</p>
+
+<!-- Building a Predictive Model Section -->
+<h3>🛠️ Building a Predictive Model</h3>
+
+<!-- Paragraph -->
+<p>Additional data is gathered and collected, including booking data (buying data). Along with the web scraping data, this collected data is used to build a predictive machine learning model. In this case, the model used is the random forest classifier, which can predict whether or not a given customer with given metrics will buy the product or service of the company.</p>
+
+<!-- Model Image -->
+<div style="display: flex; justify-content: space-between; align-items: center;">
+  <!-- First Model Image -->
+  <img src="https://serokell.io/files/vz/vz1f8191.Ensemble-of-decision-trees.png" alt="Random Forest Classifier Model" width="400"/>
+  
+  <!-- Second Model Image -->
+  <img src="https://www.qualtrics.com/m/assets/wp-content/uploads/2020/05/1359555_PredictiveAnalytics_01_050222.png" alt="Predictive Analytics" width="400"/>
+</div>
+
+<!-- Additional Metrics and Accuracy Score -->
+<p>Few important metrics taken as input for a good predicted output include: 'purchase_lead', 'length_of_stay', 'flight_duration' to predict the booking output. The model achieved an accuracy score of 80%.</p>
+
+
