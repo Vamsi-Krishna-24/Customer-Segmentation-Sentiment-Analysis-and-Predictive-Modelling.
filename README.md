@@ -88,5 +88,15 @@ scikit-learn
 
 <!-- Additional Metrics and Accuracy Score -->
 <p>Few important metrics taken as input for a good predicted output include: 'purchase_lead', 'length_of_stay', 'flight_duration' to predict the booking output. The model achieved an accuracy score of 80%.</p>
+<!-- References Section -->
+<h3>📚 References</h3>
+
+<!-- Reference List -->
+<ul>
+  <li>Ref 1: <a href="https://www.airlinequality.com/" target="_blank">Airline Quality</a> - Website where data is webscrapped</li>
+  <li>Ref 2: <a href="https://towardsdatascience.com/my-absolute-go-to-for-sentiment-analysis-textblob-3ac3a11d524" target="_blank">Towards Data Science</a> - Understanding TextBlob and NLP</li>
+  <li>Ref 3: <a href="https://scikit-learn.org/stable/modules/model_evaluation.html" target="_blank">scikit-learn Documentation</a> - Understanding the models</li>
+</ul>
+
 
 
