@@ -3,7 +3,8 @@
 <h2>📊 Sentiment-Analysis-and-Predictive-Modelling</h2>
 
 <!-- Brief with Image -->
-<p>For any business to run in the most efficient and successful way, the primary aspect of that business should be customer retention. In other words, it's the ability of the company to turn customers into repeated buyers of their product or service.</p>
+<p>For any business to run in the most efficient and successful way, the primary aspect of that business should be customer retention. In other words, it's the ability of the company to turn customers into repeated buyers of their product or service.
+For any Files related to data or code have a look on the left panel.</p>
 <!-- Customer Segmentation Section with Image -->
 <h3>🎯 Customer Segmentation</h3>
 <img src="https://www.corporatevision-news.com/wp-content/uploads/2022/10/Customer-Segmentation.jpg" alt="Customer Segmentation" width="500"/>
