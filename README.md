@@ -183,6 +183,13 @@ The model's predictive performance is assessed using the Precision score, achiev
   <li>Ref 2: <a href="https://towardsdatascience.com/my-absolute-go-to-for-sentiment-analysis-textblob-3ac3a11d524" target="_blank">Towards Data Science</a> - Understanding TextBlob and NLP</li>
   <li>Ref 3: <a href="https://scikit-learn.org/stable/modules/model_evaluation.html" target="_blank">scikit-learn Documentation</a> - Understanding the models</li>
 </ul>
+<!-- Conclusion Section -->
+<h2>Conclusion</h2>
+
+<!-- Conclusion Paragraph -->
+<p>After meticulously collecting and analyzing customer feedback, it's evident that customers fall into two distinct types: those who actively provide feedback (Type 1) and those who do not (Type 2). The essence of this project revolves around understanding customer behavior and satisfaction levels.</p>
+
+<p>The primary objective is to segment customers based on their satisfaction levels. Each segment is then channeled into specific marketing strategies, ensuring a tailored approach to maximize the chances of customers returning for the same product or service. By studying and responding to customer feedback, businesses can enhance customer satisfaction and loyalty, ultimately contributing to their overall success.</p>
 
 
 
