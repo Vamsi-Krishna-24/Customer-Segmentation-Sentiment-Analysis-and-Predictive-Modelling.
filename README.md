@@ -50,13 +50,25 @@ import pandas as pd
 <p>All the code for data collection is available <a href="https://github.com/Vamsi-Krishna-24/Customer-Segmentation-Sentiment-Analysis-and-Predictive-Modelling./blob/main/Data-Analysis-model-Building/Data_collectiion_through_web_scrapping.ipynb">here</a>.</p>
 
 <!-- Sideheading and Paragraph -->
+<h2>DATA PRE-PROCESSING</h2>
+
+
+The available or collected data is often in a raw state, characterized by duplicate entries, null values, and a lack of structure. This raw state can be compared to chopping vegetables before cooking. To prepare the data for analysis, it requires cleaning and transformation:
+
+- Removal of duplicate entries.
+- Addressing null values.
+- Changing the unstructured format to a structured one.
+
+Just like preparing ingredients before cooking, this data cleaning process is essential before diving into the analysis or data analysis "recipe." The objective is to have a clean and organized dataset, ready for analysis—a necessary step before embarking on the analytical journey, much like having ingredients neatly prepared before starting to cook a delicious meal.
+
+
 <h3>🤔 Understanding Different Possibilities: How the Data Can Be Used</h3>
 <p>Every time feedback is given, it's molded to segment users so that each individual part is dealt with accordingly by the sales and marketing team.</p>
 
 <!-- In-Depth Paragraph -->
 <p>In-depth, understanding whether a customer will choose to engage with a company again hinges on the feedback they provide. Although the feedback process is inherently straightforward, its significance lies in our ability to predict a customer's likelihood of returning.</p>
 
-<h2>🔍 The solution 📕</h2>
+<h2>🔍 The solution: In detail DATA ANALYSIS  📕</h2>
 
 <!-- Sentiment Analysis Section -->
 <h3>🔍 The Role of Data Analysis - Sentiment Analysis</h3>
@@ -88,10 +100,20 @@ scikit-learn
 <p>To view the requirements.txt file  <a href="https://github.com/Vamsi-Krishna-24/Customer-Segmentation-Sentiment-Analysis-and-Predictive-Modelling./blob/main/requirements.txt">here</a>.</p>
 
 <!-- Building a Predictive Model Section -->
-<h3>🛠️ Building a Predictive Model</h3>
+<h2>🛠️ Building a Predictive Model</h2>
 
 <!-- Paragraph -->
 <p>Additional data is gathered and collected, including booking data (buying data). Along with the web scraping data, this collected data is used to build a predictive machine learning model. In this case, the model used is the random forest classifier, which can predict whether or not a given customer with given metrics will buy the product or service of the company.</p>
+
+**Random Forest Classifier Usage:**
+
+The Random Forest classifier is utilized by inputting data from the customer booking data matrix. This matrix incorporates features like flight time, hours traveled, and other relevant metrics. The primary goal is to predict whether the customer will make a repeat purchase from the company.
+
+**Model Performance:**
+
+The model's predictive performance is assessed using the Precision score, achieving an accuracy rate of 80%. This signifies a commendable level of precision in predicting positive instances, indicating a successful outcome.
+
+
 
 <!-- Model Image -->
 <div style="display: flex; justify-content: space-between; align-items: center;">
