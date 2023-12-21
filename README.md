@@ -68,20 +68,61 @@ Just like preparing ingredients before cooking, this data cleaning process is es
 <!-- In-Depth Paragraph -->
 <p>In-depth, understanding whether a customer will choose to engage with a company again hinges on the feedback they provide. Although the feedback process is inherently straightforward, its significance lies in our ability to predict a customer's likelihood of returning.</p>
 
-<h2>🔍 The solution: In detail DATA ANALYSIS  📕</h2>
+<h2>🔍 In-detail DATA ANALYSIS and INSIGHTS 📕</h2>
+<!-- 1. NLP and Sentiment Analysis -->
+<table style="width: 100%;">
+  <tr>
+    <td style="width: 50%;">
+      <p><strong>NLP and Sentiment Analysis:</strong> NLP and sentiment analysis play a crucial role in identifying customer satisfaction levels:</p>
+      <ul>
+        <li><strong>Satisfied Customers:</strong> 64%+</li>
+        <li><strong>Unsatisfied Customers:</strong> 35%+</li>
+        <li><strong>Neutral Responses:</strong> 11%</li>
+      </ul>
+    </td>
+    <td style="width: 50%;">
+      <img src="https://imgur.com/0QiAtT2.png" alt="NLP and Sentiment Analysis" width="500" />
+      <br/><sub>↑ Explore NLP and Sentiment Analysis</sub>
+    </td>
+  </tr>
+</table>
 
-<!-- Sentiment Analysis Section -->
-<h3>🔍 The Role of Data Analysis - Sentiment Analysis</h3>
-<div style="display: flex; justify-content: space-between; align-items: center;">
-  <img src="https://drive.google.com/uc?export=view&id=1zpCBlr3aGy1oMEtDvMbiX5hUnCMmcQAd" alt="Sentiment Analysis Image 1" width="400"/>
-  <img src="https://drive.google.com/uc?export=view&id=1nRfyR8b-WwSsF12le46nURH1oAmIZAH4" alt="Sentiment Analysis Image 2" width="400"/>
-</div>
+<!-- 2. Keyword Identification -->
+<table style="width: 100%;">
+  <tr>
+    <td style="width: 50%;">
+      <p><strong>Keyword Identification:</strong> Identifying the most dominant factors customers look for:</p>
+      <ul>
+        <li>Flight</li>
+        <li>Food</li>
+        <li>Service</li>
+        <li>Trip Verified</li>
+        <li>...</li>
+      </ul>
+    </td>
+    <td style="width: 50%;">
+      <img src="https://imgur.com/zs18jZ9.png" alt="Keyword Identification" width="500" />
+      <br/><sub>↑ Discover Dominant Keywords</sub>
+    </td>
+  </tr>
+</table>
 
-<!-- Paragraph -->
-<p>Manual classification of millions of customer reviews in real-time is an arduous task. This is where the TextBlob Python library becomes indispensable. Serving as a tool for processing textual data, TextBlob offers a simplified API for common natural language processing tasks, such as identifying parts of speech and noun phrases.</p>
-
-<!-- In-Depth Paragraph -->
-<p>Sentiment analysis, a critical aspect of this process, involves TextBlob capturing phrases and words and classifying them into positive, neutral, or negative categories. In essence, sentiment analysis serves as our means to discern the emotions and sentiments expressed by individual customers in their reviews, providing valuable insights for strategic decision-making.</p>
+<!-- 3. Derived Insight from the Other 2 Insights -->
+<table style="width: 100%;">
+  <tr>
+    <td style="width: 50%;">
+      <p><strong>Derived Insight from the Other 2 Insights:</strong> Predictions derived from the insights above:</p>
+      <ul>
+        <li>Transformed satisfaction levels.</li>
+        <li>Predicted potential buyers with a precision score of 72%+.</li>
+      </ul>
+    </td>
+    <td style="width: 50%;">
+      <img src="https://imgur.com/8GvmVQU.png" alt="Derived Insight from the Other 2 Insights" width="500" />
+      <br/><sub>↑ Explore Derived Insight</sub>
+    </td>
+  </tr>
+</table>
 
 <!-- Python Requirements Section -->
 <h3>🐍 Python Requirements</h3>
