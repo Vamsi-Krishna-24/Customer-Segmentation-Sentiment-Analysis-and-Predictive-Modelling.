@@ -1,10 +1,12 @@
 <!-- Project Title and Subtitle with Symbols -->
 <h1>🎯 Customer Segmentation</h1>
-<h2>📊 Sentiment-Analysis-and-Predictive-Modelling</h2>
+<h2>📊 A Detailed Brief </h2>
 
+<h3>Sentiment Analysis and Predictive Analysis</h3>
 <!-- Brief with Image -->
 <p>For any business to run in the most efficient and successful way, the primary aspect of that business should be customer retention. In other words, it's the ability of the company to turn customers into repeated buyers of their product or service.
 For any Files related to data or code have a look on the left panel.</p>
+<p>Companies effectively using customer segmentation strategies experience a 36% increase in revenue (Source: Aberdeen Group).</p>
 <!-- Customer Segmentation Section with Image -->
 <h3>🎯 Customer Segmentation</h3>
 <img src="https://www.corporatevision-news.com/wp-content/uploads/2022/10/Customer-Segmentation.jpg" alt="Customer Segmentation" width="500"/>
@@ -14,10 +16,23 @@ For any Files related to data or code have a look on the left panel.</p>
 <img src="https://f.hubspotusercontent00.net/hubfs/285855/Compressed-bigstock-Customer-Retention-Strategy-D-255195535.jpg" alt="Customer Retention Strategy" width="500"/>
 
 <!-- Data Collection Section -->
-<h3>📈 Data Collection</h3>
+<h2>📈 Data Collection</h2>
 
 <!-- Paragraph -->
 <p>Nothing can be built from a void. Ever wondered why every supermarket, multiplex, airlines, any form of proper business asks for feedback? Is it just for improvising? Absolutely no, so what else is the question. Let's dive deep and see what else...</p>
+
+The complete data that is dealt with in this project is [here](https://github.com/Vamsi-Krishna-24/Customer-Segmentation-Sentiment-Analysis-and-Predictive-Modelling./tree/main/Data_Folder).
+
+There are two types of data:
+
+1. **Customer Reviews Data:**
+   - The first dataset consists of customer reviews. These reviews gathered as feedback on the company's website, have been web-scraped using a library called BeautifulSoup in Python. For a more detailed overview, you can find the [source code](https://github.com/Vamsi-Krishna-24/Customer-Segmentation-Sentiment-Analysis-and-Predictive-Modelling./blob/main/Data-Analysis-model-Building/Data_collectiion_through_web_scrapping.ipynb).
+   - The actual [customer feedback](https://github.com/Vamsi-Krishna-24/Customer-Segmentation-Sentiment-Analysis-and-Predictive-Modelling./blob/main/Data_Folder/reviews.csv) that is collected through scraping. There are a total of 10,000+ records collected.
+
+2. **Customer Booking Data:**
+   - The second type of data is the customer booking data, which includes details about flight time, price, duration, etc.
+   - You can access the customer booking data [here](https://github.com/Vamsi-Krishna-24/Customer-Segmentation-Sentiment-Analysis-and-Predictive-Modelling./blob/main/Data_Folder/customer_booking.csv). This dataset comprises 50,000+ records with 7+ main metrics.
+
 
 <!-- Image -->
 <img src="https://avinetworks.com/wp-content/uploads/2023/06/web-scraping-diagram.png" alt="Web Scraping Diagram" width="800"/>
