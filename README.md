@@ -9,11 +9,18 @@ For any Files related to data or code have a look on the left panel.</p>
 <p>Companies effectively using customer segmentation strategies experience a 36% increase in revenue (Source: Aberdeen Group).</p>
 <!-- Customer Segmentation Section with Image -->
 <h3>🎯 Customer Segmentation</h3>
-<img src="https://www.corporatevision-news.com/wp-content/uploads/2022/10/Customer-Segmentation.jpg" alt="Customer Segmentation" width="500"/>
 <p>Within the vast array of reviews a company receives, we meticulously classify them into three distinct categories: positive, neutral, and negative. This segmentation enables us to effectively target positive, negative, and neutral customer segments with specific marketing strategies, maximizing the benefits for the company.</p>
 
 <!-- Image -->
-<img src="https://f.hubspotusercontent00.net/hubfs/285855/Compressed-bigstock-Customer-Retention-Strategy-D-255195535.jpg" alt="Customer Retention Strategy" width="500"/>
+<!-- Two Images Side by Side -->
+<div style="display: flex;">
+  <!-- First Image -->
+  <img src="https://f.hubspotusercontent00.net/hubfs/285855/Compressed-bigstock-Customer-Retention-Strategy-D-255195535.jpg" alt="Customer Retention Strategy" width="500" style="margin-right: 10px;"/>
+
+  <!-- Second Image -->
+  <img src="https://www.corporatevision-news.com/wp-content/uploads/2022/10/Customer-Segmentation.jpg" alt="Customer Segmentation" width="500"/>
+</div>
+
 
 <!-- Data Collection Section -->
 <h2>📈 Data Collection</h2>
