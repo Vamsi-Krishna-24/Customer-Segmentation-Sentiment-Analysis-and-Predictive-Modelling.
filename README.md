@@ -114,19 +114,20 @@ Just like preparing ingredients before cooking, this data cleaning process is es
   </tr>
 </table>
 
-<!-- 3. Derived Insight from the Other 2 Insights -->
+<!-- 3.Flight booking on each day -->
 <table style="width: 100%;">
   <tr>
     <td style="width: 50%;">
-      <p><strong>Derived Insight from the Other 2 Insights:</strong> Predictions derived from the insights above:</p>
+      <p><strong>Daily basis flight booking data </strong> </p>
       <ul>
-        <li>Transformed satisfaction levels.</li>
-        <li>Predicted potential buyers with a precision score of 72%+.</li>
+        <li>Weekly Decline in Booking .</li>
+        <li>Highest booking on Monday and gradually decrease by 5% every day. </li>
+        <li>After the fall of bookings from Monday to Saturday again there is a slight raise that occurs on sunday</li>
       </ul>
     </td>
     <td style="width: 50%;">
-      <img src="https://imgur.com/8GvmVQU.png" alt="Derived Insight from the Other 2 Insights" width="500" />
-      <br/><sub>↑ Explore Derived Insight</sub>
+      <img src="https://imgur.com/kUZDbiM.png" alt="Daily Flight booking data" width="500" />
+      <br/><sub>↑ Flight booking data on daily basis</sub>
     </td>
   </tr>
 </table>
