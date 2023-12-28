@@ -1,14 +1,14 @@
 <!-- Project Title and Subtitle with Symbols -->
 <h1>🎯 Customer Segmentation</h1>
-<h2>📊 A Detailed Brief </h2>
+<h2>📊 1.A Detailed Brief </h2>
 
-<h3>Sentiment Analysis and Predictive Analysis</h3>
+<h3>1.1Sentiment Analysis and Predictive Analysis</h3>
 <!-- Brief with Image -->
 <p>For any business to run in the most efficient and successful way, the primary aspect of that business should be customer retention. In other words, it's the ability of the company to turn customers into repeated buyers of their product or service.
 For any Files related to data or code have a look on the left panel.</p>
 <p>Companies effectively using customer segmentation strategies experience a 36% increase in revenue (Source: Aberdeen Group).</p>
 <!-- Customer Segmentation Section with Image -->
-<h3>🎯 Customer Segmentation</h3>
+<h3>1.2🎯 Customer Segmentation</h3>
 <p>Within the vast array of reviews a company receives, we meticulously classify them into three distinct categories: positive, neutral, and negative. This segmentation enables us to effectively target positive, negative, and neutral customer segments with specific marketing strategies, maximizing the benefits for the company.</p>
 
 <!-- Image -->
@@ -23,7 +23,7 @@ For any Files related to data or code have a look on the left panel.</p>
 
 
 <!-- Data Collection Section -->
-<h2>📈 Data Collection</h2>
+<h2>2. Data Collection 📈</h2>
 
 <!-- Paragraph -->
 <p>Nothing can be built from a void. Ever wondered why every supermarket, multiplex, airlines, any form of proper business asks for feedback? Is it just for improvising? Absolutely no, so what else is the question. Let's dive deep and see what else...</p>
@@ -57,30 +57,58 @@ import pandas as pd
 <p>All the code for data collection is available <a href="https://github.com/Vamsi-Krishna-24/Customer-Segmentation-Sentiment-Analysis-and-Predictive-Modelling./blob/main/Data-Analysis-model-Building/Data_collectiion_through_web_scrapping.ipynb">here</a>.</p>
 
 <!-- Sideheading and Paragraph -->
-<h2>DATA PRE-PROCESSING</h2>
-
-
+<h2>3.DATA PRE-PROCESSING</h2>
+<p>The term "Pre-processing" itself says that data is handled "PRE" (before) processing into the code. It has two main steps Cleaning and feature engineering. </p>
+<h3>3.1 Data Cleaning</h3>
 The available or collected data is often in a raw state, characterized by duplicate entries, null values, and a lack of structure. This raw state can be compared to chopping vegetables before cooking. To prepare the data for analysis, it requires cleaning and transformation:
 
 - Removal of duplicate entries.
 - Addressing null values.
 - Changing the unstructured format to a structured one.
 
-Just like preparing ingredients before cooking, this data cleaning process is essential before diving into the analysis or data analysis "recipe." The objective is to have a clean and organized dataset, ready for analysis—a necessary step before embarking on the analytical journey, much like having ingredients neatly prepared before starting to cook a delicious meal.
+<h3>3.2 Feature Engineering.</h3>
+From the data that is available in hand, creating new metrics(columns) or new Features in data, results in analyzing the data in the required state.
 
+Just like preparing ingredients before cooking, this data-cleaning process is essential before diving into the analysis or data analysis "recipe." The objective is to have a clean and organized dataset, ready for analysis—a necessary step before embarking on the analytical journey, much like having ingredients neatly prepared before starting to cook a delicious meal.
+Here a new feature is added that is **SENTIMENT** after performing sentiment analysis, to study the percentage of customers who stays **Positive, Negative and Neutral** towards a service.
+<!-- Code Box -->
+<pre>
+<code>
+# Apply sentiment analysis and categorization to each comment
+data['Sentiment'] = data['Reviews'].apply(lambda x: categorize_sentiment(analyse_sentiment(x)))
+</code>
+</pre>
 
-<h3>🤔 Understanding Different Possibilities: How the Data Can Be Used</h3>
+<h3>3.3 Understanding Different Possibilities: How the Data Can Be Used🤔</h3>
 <p>Every time feedback is given, it's molded to segment users so that each individual part is dealt with accordingly by the sales and marketing team.</p>
+
 
 <!-- In-Depth Paragraph -->
 <p>In-depth, understanding whether a customer will choose to engage with a company again hinges on the feedback they provide. Although the feedback process is inherently straightforward, its significance lies in our ability to predict a customer's likelihood of returning.</p>
 
-<h2>🔍 In-detail DATA ANALYSIS and INSIGHTS 📕</h2>
+<!-- Python Requirements Section -->
+<h3>🐍 Python Requirements</h3>
+
+<!-- Code Box for requirements.txt -->
+<pre>
+<code> 
+pandas
+numpy
+textblob
+scikit-learn
+</code>
+</pre>
+
+<!-- Out of Code Box -->
+<p>To view the requirements.txt file  <a href="https://github.com/Vamsi-Krishna-24/Customer-Segmentation-Sentiment-Analysis-and-Predictive-Modelling./blob/main/requirements.txt">here</a>.</p>
+
+
+<h2>4. In-detail DATA ANALYSIS and INSIGHTS 🔍📕</h2>
 <!-- 1. NLP and Sentiment Analysis -->
 <table style="width: 100%;">
   <tr>
     <td style="width: 50%;">
-      <p><strong>NLP and Sentiment Analysis:</strong> NLP and sentiment analysis play a crucial role in identifying customer satisfaction levels:</p>
+      <p><strong>4.1:NLP and Sentiment Analysis:</strong> NLP and sentiment analysis play a crucial role in identifying customer satisfaction levels:</p>
       <ul>
         <li><strong>Satisfied Customers:</strong> 64%+</li>
         <li><strong>Unsatisfied Customers:</strong> 35%+</li>
@@ -98,7 +126,7 @@ Just like preparing ingredients before cooking, this data cleaning process is es
 <table style="width: 100%;">
   <tr>
     <td style="width: 50%;">
-      <p><strong>Keyword Identification:</strong> Identifying the most dominant factors customers look for:</p>
+      <p><strong>4.2:Keyword Identification:</strong> Identifying the most dominant factors customers look for:</p>
       <ul>
         <li>Flight</li>
         <li>Food</li>
@@ -118,7 +146,7 @@ Just like preparing ingredients before cooking, this data cleaning process is es
 <table style="width: 100%;">
   <tr>
     <td style="width: 50%;">
-      <p><strong>Daily basis flight booking data </strong> </p>
+      <p><strong>4.3:Daily basis flight booking data </strong> </p>
       <ul>
         <li>Weekly Decline in Booking .</li>
         <li>Highest booking on Monday and gradually decrease by 5% every day. </li>
@@ -132,25 +160,31 @@ Just like preparing ingredients before cooking, this data cleaning process is es
   </tr>
 </table>
 
-<!-- Python Requirements Section -->
-<h3>🐍 Python Requirements</h3>
+<h2>5.End-to-end machine learning pipeline or workflow</h2>
 
-<!-- Code Box for requirements.txt -->
-<pre>
-<code> 
-pandas
-numpy
-textblob
-scikit-learn
-</code>
-</pre>
+<h3>5.1 S3 Bucket Creation and Data Upload: 🪣</h3>
+S3 buckets are like digital containers in the cloud that store various types of data securely. They act as virtual warehouses accessible from anywhere on the internet, offering features like versioning, access control, and the ability to host static websites. 
+In simple terms let us say photos in our mobile is synced into google Photos, thereby managing the storage and can be accessed from anywhere.The simple logic applies here to...
 
-<!-- Out of Code Box -->
-<p>To view the requirements.txt file  <a href="https://github.com/Vamsi-Krishna-24/Customer-Segmentation-Sentiment-Analysis-and-Predictive-Modelling./blob/main/requirements.txt">here</a>.</p>
+<img src="https://imgur.com/ew8nFid.png" alt="S3 Buckets" width="900">
+
+<h3>5.2 Data Access through SageMaker:</h3> 
+In the machine learning workflow, data stored in an S3 bucket is seamlessly accessed through SageMaker, where a Jupyter Notebook is employed for developing and fine-tuning the machine learning model. For instance, consider a scenario where a dataset of housing prices (stored in S3) is analyzed and a predictive model is trained using SageMaker's Jupyter environment for housing price predictions.
+<img src="https://imgur.com/s9aOlk6.png"  width="900">
+
+<h3>5.3 Machine Learning Code Development in Jupyter Notebook:</h3> 
+
+S3 stores data for ML in a bucket, accessed by SageMaker's Jupyter. For instance, predicting house prices using a dataset stored in S3 via SageMaker's Jupyter.
+<img src="https://imgur.com/jA4n64x.png" width="900">
+
+<h3>5.4 Deployment on EC2 Instance:</h3> 
+
+After developing a sentiment analysis model in a Jupyter Notebook within Amazon SageMaker, you deploy the model as a service. This deployed model becomes accessible through an API endpoint, integrated seamlessly with an application running on an Amazon EC2 instance. For instance, a social media platform could utilize this pipeline to automatically analyze user sentiments in real-time comments, enhancing user experience.
+<img src="https://imgur.com/Z7Ak5NP.png"  width="900">
 
 <!-- Building a Predictive Model Section -->
-<h2>🛠️ Building a Predictive Model</h2>
-
+<h2>6. 🛠️ Building a Predictive Model</h2>
+<p>The core of this project lies at building an model and that's here....</p>
 <!-- Paragraph -->
 <p>Additional data is gathered and collected, including booking data (buying data). Along with the web scraping data, this collected data is used to build a predictive machine learning model. In this case, the model used is the random forest classifier, which can predict whether or not a given customer with given metrics will buy the product or service of the company.</p>
 
