@@ -167,27 +167,77 @@ S3 buckets are like digital containers in the cloud that store various types of 
 In simple terms let us say photos in our mobile is synced into google Photos, thereby managing the storage and can be accessed from anywhere.The simple logic applies here to...
 
 <img src="https://imgur.com/ew8nFid.png" alt="S3 Buckets" width="900">
+<pre>
+  <code>
+import boto3
 
+#Bucket and file paths
+bucket_name = 'customersegmentation60k'
+customer_booking_path = 'sagemaker/customersegmentation/sklearnconatiner/customer_booking.csv'
+sentiment_analysis_path = 'sagemaker/customersegmentation/sklearnconatiner/Polarity.csv'
+
+#Creating an S3 client
+s3 = boto3.client('s3')
+
+#Upload required data
+s3.upload_file('Vk/downloads/customer_booking.csv', bucket_name, customer_booking_path)
+s3.upload_file('Vk/downloads/Polarity.csv', bucket_name, sentiment_analysis_path)
+
+  </code>
+</pre>
+
+
+ 
 <h3>5.2 Data Access through SageMaker:</h3> 
 In the machine learning workflow, data stored in an S3 bucket is seamlessly accessed through SageMaker, where a Jupyter Notebook is employed for developing and fine-tuning the machine learning model. For instance, consider a scenario where a dataset of housing prices (stored in S3) is analyzed and a predictive model is trained using SageMaker's Jupyter environment for housing price predictions.
 <img src="https://imgur.com/s9aOlk6.png"  width="900">
+<pre>
+  <code>
+## Importing all the neccessary libraries.
+import boto3
+import sagemaker
+import pandas as pd
+import pickle
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import accuracy_score
+from sklearn.model_selection import train_test_split
+from sagemaker import get_execution_role
+from sagemaker.model import Model
+import matplotlib.pyplot as plt
+  </code>
+</pre>
 
 <h3>5.3 Machine Learning Code Development in Jupyter Notebook:</h3> 
 
 S3 stores data for ML in a bucket, accessed by SageMaker's Jupyter. For instance, predicting house prices using a dataset stored in S3 via SageMaker's Jupyter.
 <img src="https://imgur.com/jA4n64x.png" width="900">
 
-<h3>5.4 Deployment on EC2 Instance:</h3> 
+<h3>5.4 Deployment of Sagemaker Endpoints:</h3> 
 
-After developing a sentiment analysis model in a Jupyter Notebook within Amazon SageMaker, you deploy the model as a service. This deployed model becomes accessible through an API endpoint, integrated seamlessly with an application running on an Amazon EC2 instance. For instance, a social media platform could utilize this pipeline to automatically analyze user sentiments in real-time comments, enhancing user experience.
-<img src="https://imgur.com/Z7Ak5NP.png"  width="900">
+
+First, in Jupyter Notebook 1, we develop machine learning code on Amazon SageMaker using customer segmentation data. This code becomes a model deployed as an endpoint.
+
+Now, in Jupyter Notebook 2, we use Streamlit. It acts as an interface for users to input data. Streamlit takes care of collecting user input and generates requests. These requests are then forwarded to the SageMaker endpoint, where the model processes them to make predictions. In essence, Notebook 1 builds the model, and Notebook 2 handles user interactions and facilitates predictions using that model.
+<img src="https://imgur.com/NPQjUeb.png"  width="900">
+<pre>
+  <code>
+  predictor = model.deploy(instance_type="ml.m5.large", endpoint_name="your-endpoint-name")
+  </code>
+</pre>
 
 <!-- Building a Predictive Model Section -->
 <h2>6. 🛠️ Building a Predictive Model</h2>
 <p>The core of this project lies at building an model and that's here....</p>
 <!-- Paragraph -->
 <p>Additional data is gathered and collected, including booking data (buying data). Along with the web scraping data, this collected data is used to build a predictive machine learning model. In this case, the model used is the random forest classifier, which can predict whether or not a given customer with given metrics will buy the product or service of the company.</p>
+<pre>
+  <code>
+# Create a Random Forest classifier
+clf = RandomForestClassifier(n_estimators=100, random_state=1)
+  </code>
+</pre>
 
+It's not just dumping data in the model, it is about the selection of that model, to tell the story behind the data and predicting something that makes sense in a practical way !
 **Random Forest Classifier Usage:**
 
 The Random Forest classifier is utilized by inputting data from the customer booking data matrix. This matrix incorporates features like flight time, hours traveled, and other relevant metrics. The primary goal is to predict whether the customer will make a repeat purchase from the company.
