@@ -1,3 +1,8 @@
+> [!IMPORTANT]
+>
+> In American politics, a party leveraged detailed data to **categorize individual voters**, tailoring content to sway opinions. My project draws inspiration from this, exploring how businesses apply a similar concept—**customer segmentation**. It involves sorting **customer feedback** to understand and strategically influence their **buying choices**. Just like in politics, where personalized messages impact voters, businesses target customers based on preferences, underscoring the crucial role of **customer segmentation** in shaping both political opinions and **purchasing decisions**.
+
+
 <!-- Project Title and Subtitle with Symbols -->
 <h1>🎯 Customer Segmentation</h1>
 <h2>📊 1.A Detailed Brief </h2>
