@@ -2,6 +2,9 @@
 <h1>🎯 Customer Segmentation</h1>
 <h2>📊 1.A Detailed Brief </h2>
 
+
+
+
 <h3>1.1Sentiment Analysis and Predictive Analysis</h3>
 <!-- Brief with Image -->
 <p>For any business to run in the most efficient and successful way, the primary aspect of that business should be customer retention. In other words, it's the ability of the company to turn customers into repeated buyers of their product or service.
@@ -21,6 +24,17 @@ For any Files related to data or code have a look on the left panel.</p>
   <img src="https://www.corporatevision-news.com/wp-content/uploads/2022/10/Customer-Segmentation.jpg" alt="Customer Segmentation" width="500"/>
 </div>
 
+
+### Technologies Used
+
+
+* [![Python](https://img.shields.io/badge/Python-3.8-blue)](https://www.python.org/)
+* [![AWS](https://img.shields.io/badge/AWS-Cloud-orange)](https://aws.amazon.com/)
+* [![Docker](https://img.shields.io/badge/Docker-Latest-blue)](https://www.docker.com/)
+* [![S3 Buckets](https://img.shields.io/badge/S3%20Buckets-Scalable-brightgreen)](https://aws.amazon.com/s3/)
+* [![Streamlit](https://img.shields.io/badge/Streamlit-0.85-blueviolet)](https://streamlit.io/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- Data Collection Section -->
 <h2>2. Data Collection 📈</h2>
